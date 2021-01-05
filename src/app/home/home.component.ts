@@ -21,10 +21,11 @@ export class HomeComponent implements OnInit {
     private promotionService: PromotionService,
     private leaderService: LeaderService) { }
 
+
   ngOnInit(): void {
     this.dish = this.dishService.getFeaturedDish();
     this.promotion = this.promotionService.getFeaturePromotion();
-  this.leader = this.leaderService.getFeatureLeader();
+    this.leader = this.leaderService.getFeatureLeader();
   }
 
 }
